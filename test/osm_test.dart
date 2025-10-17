@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:darter/services/models/osm.dart';
+import 'package:flarter/services/models/osm.dart';
 
 void main() {
   group('MyClass', () {

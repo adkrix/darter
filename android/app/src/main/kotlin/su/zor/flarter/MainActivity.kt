@@ -1,4 +1,4 @@
-package su.zor.darter
+package su.zor.flarter
 
 import io.flutter.embedding.android.FlutterActivity
 

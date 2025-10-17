@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:darter/screens/screens.dart';
-import 'package:darter/theme/theme.dart';
-import 'package:darter/routes.dart';
+import 'package:flarter/screens/screens.dart';
+import 'package:flarter/theme/theme.dart';
+import 'package:flarter/routes.dart';
 
-class DarterApp extends StatelessWidget {
-  const DarterApp({super.key});
+class flarterApp extends StatelessWidget {
+  const flarterApp({super.key});
 
   @override
   Widget build(BuildContext context) {

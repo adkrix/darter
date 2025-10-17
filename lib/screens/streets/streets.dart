@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:darter/services/services.dart';
+import 'package:flarter/services/services.dart';
 import 'ui/ui.dart';
 
 class StreetsScreen extends StatefulWidget {
@@ -13,14 +13,19 @@ class StreetsScreen extends StatefulWidget {
 
 class _StreetsScreenState extends State<StreetsScreen> {
   List<Osm> _list = [];
+  bool _loading = false;
 
   @override
   void didChangeDependencies() {
-    ApiService().getItems().then(
-      (list) => setState(() {
-        _list = list;
-      }),
-    );
+    _loading = true;
+    ApiService()
+        .getItems()
+        .then(
+          (list) => setState(() {
+            _list = list;
+          }),
+        )
+        .catchError(() => {_loading = false});
     super.didChangeDependencies();
   }
 

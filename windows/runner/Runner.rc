@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "su.zor" "\0"
-            VALUE "FileDescription", "darter" "\0"
+            VALUE "FileDescription", "flarter" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "darter" "\0"
+            VALUE "InternalName", "flarter" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 su.zor. All rights reserved." "\0"
-            VALUE "OriginalFilename", "darter.exe" "\0"
-            VALUE "ProductName", "darter" "\0"
+            VALUE "OriginalFilename", "flarter.exe" "\0"
+            VALUE "ProductName", "flarter" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

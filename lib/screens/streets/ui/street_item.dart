@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'package:darter/services/services.dart';
+import 'package:flarter/services/services.dart';
 
 class StreetItem extends StatelessWidget {
   const StreetItem({super.key, required this.street});

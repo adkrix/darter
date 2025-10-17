@@ -1,4 +1,4 @@
-import 'package:darter/screens/screens.dart';
+import 'package:flarter/screens/screens.dart';
 
 const initialRoute = '/';
 

@@ -1,4 +1,4 @@
-import 'package:darter/services/api/api.dart';
+import 'package:flarter/services/api/api.dart';
 import 'package:flutter/material.dart';
 
 class ItemScreen extends StatefulWidget {
@@ -41,8 +41,7 @@ class _ItemScreenState extends State<ItemScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           final list = await ApiService().getItems();
-          print(list);
-        },
+          },
         tooltip: 'Download',
         child: const Icon(Icons.download),
       ),

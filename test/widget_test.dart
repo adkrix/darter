@@ -1,5 +1,5 @@
 /*
-import 'package:darter/pages/settings/settings.dart';
+import 'package:flarter/pages/settings/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
