@@ -40,8 +40,8 @@ class _ItemScreenState extends State<ItemScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          final list = await ApiService().getItems();
-          },
+          await ApiService().getItems();
+        },
         tooltip: 'Download',
         child: const Icon(Icons.download),
       ),

@@ -1,0 +1,48 @@
+ #!/bin/bash
+
+dart scripts/wrk.dart $@
+
+ exit 0
+
+# --------------------
+
+ACT="$1"
+
+
+case $ACT in
+  f)
+    clear 
+    dart format .
+    ;;
+  l)
+    clear
+    flutter clean && flutter run -d linux
+    ;;
+  c)
+    clear
+    flutter clean 
+    flutter run -d chrome
+    ;;
+  L)
+    clear
+    flutter clean 
+    flutter build apk  --release  --target-platform android-arm64
+    # deploy
+    ;;
+  A)
+    clear
+    flutter clean 
+    flutter build apk  --release  --target-platform android-arm64
+    scp build/app/outputs/flutter-apk/app-release.apk memd:/var/www/zor.su/testige/flarter.apk
+    # deploy
+    ;;
+  *)
+    echo "wrk f - format project"
+    echo "wrk l - run -d linux"
+    echo "wrk c - run -d crome"
+    echo "wrk A - build android app (apk)"
+    echo "wrk L - build linux app"
+ ;;
+esac
+
+

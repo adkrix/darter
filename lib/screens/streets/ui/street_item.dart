@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-
 import 'package:flarter/services/services.dart';
 
 class StreetItem extends StatelessWidget {

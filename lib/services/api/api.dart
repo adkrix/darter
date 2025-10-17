@@ -11,14 +11,11 @@ const baseUrl = 'https://nominatim.openstreetmap.org/search';
 class ApiService {
   Future<List<Osm>> getItems([String? q = 'Columb street']) async {
     try {
-
       final response = await dio.get<List<dynamic>>(
         baseUrl,
         queryParameters: {'format': 'json', 'q': '$q'},
         options: Options(
-          headers: {
-            'User-Agent': 'MyCustomApp/1.0.0 (iOS; iPhone)',
-          },
+          headers: {'User-Agent': 'MyCustomApp/1.0.0 (iOS; iPhone)'},
         ),
       );
       debugPrint('${response.requestOptions.uri}');
